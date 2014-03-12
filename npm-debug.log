@@ -1,0 +1,229 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'npm',
+1 verbose cli   'install',
+1 verbose cli   'http-serverasdfasdf' ]
+2 info using npm@1.3.23
+3 info using node@v0.10.24
+4 warn package.json mongo@0.1.0 No repository field.
+5 verbose cache add [ 'npm', null ]
+6 verbose cache add name=undefined spec="npm" args=["npm",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'npm',
+7 verbose parsed url   path: 'npm',
+7 verbose parsed url   href: 'npm' }
+8 verbose cache add [ 'install', null ]
+9 verbose cache add name=undefined spec="install" args=["install",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'install',
+10 verbose parsed url   path: 'install',
+10 verbose parsed url   href: 'install' }
+11 verbose cache add [ 'http-serverasdfasdf', null ]
+12 verbose cache add name=undefined spec="http-serverasdfasdf" args=["http-serverasdfasdf",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'http-serverasdfasdf',
+13 verbose parsed url   path: 'http-serverasdfasdf',
+13 verbose parsed url   href: 'http-serverasdfasdf' }
+14 silly lockFile 660051d1-npm npm
+15 verbose lock npm /Users/Hacker/.npm/660051d1-npm.lock
+16 silly lockFile 89fb511f-install install
+17 verbose lock install /Users/Hacker/.npm/89fb511f-install.lock
+18 silly lockFile 2979e6f5-http-serverasdfasdf http-serverasdfasdf
+19 verbose lock http-serverasdfasdf /Users/Hacker/.npm/2979e6f5-http-serverasdfasdf.lock
+20 silly lockFile 660051d1-npm npm
+21 silly lockFile 660051d1-npm npm
+22 silly lockFile 89fb511f-install install
+23 silly lockFile 89fb511f-install install
+24 silly lockFile 2979e6f5-http-serverasdfasdf http-serverasdfasdf
+25 silly lockFile 2979e6f5-http-serverasdfasdf http-serverasdfasdf
+26 verbose addNamed [ 'npm', '' ]
+27 verbose addNamed [ null, '*' ]
+28 silly lockFile 2f990b75-npm npm@
+29 verbose lock npm@ /Users/Hacker/.npm/2f990b75-npm.lock
+30 verbose addNamed [ 'install', '' ]
+31 verbose addNamed [ null, '*' ]
+32 silly lockFile cadb329f-install install@
+33 verbose lock install@ /Users/Hacker/.npm/cadb329f-install.lock
+34 verbose addNamed [ 'http-serverasdfasdf', '' ]
+35 verbose addNamed [ null, '*' ]
+36 silly lockFile d5cac9f5-http-serverasdfasdf http-serverasdfasdf@
+37 verbose lock http-serverasdfasdf@ /Users/Hacker/.npm/d5cac9f5-http-serverasdfasdf.lock
+38 silly addNameRange { name: 'install', range: '*', hasData: false }
+39 silly addNameRange { name: 'http-serverasdfasdf', range: '*', hasData: false }
+40 verbose url raw http-serverasdfasdf
+41 verbose url resolving [ 'https://registry.npmjs.org/', './http-serverasdfasdf' ]
+42 verbose url resolved https://registry.npmjs.org/http-serverasdfasdf
+43 info trying registry request attempt 1 at 14:00:38
+44 http GET https://registry.npmjs.org/http-serverasdfasdf
+45 silly addNameRange { name: 'npm', range: '*', hasData: false }
+46 verbose url raw install
+47 verbose url resolving [ 'https://registry.npmjs.org/', './install' ]
+48 verbose url resolved https://registry.npmjs.org/install
+49 info trying registry request attempt 1 at 14:00:38
+50 verbose etag "98PT1BK99R1EYV7OMMLNRM50E"
+51 http GET https://registry.npmjs.org/install
+52 verbose url raw npm
+53 verbose url resolving [ 'https://registry.npmjs.org/', './npm' ]
+54 verbose url resolved https://registry.npmjs.org/npm
+55 info trying registry request attempt 1 at 14:00:38
+56 verbose etag "W7NKVM8WL2MJTDXA5A00B12Q"
+57 http GET https://registry.npmjs.org/npm
+58 http 304 https://registry.npmjs.org/install
+59 silly registry.get cb [ 304,
+59 silly registry.get   { date: 'Sun, 09 Mar 2014 13:00:37 GMT',
+59 silly registry.get     server: 'Apache',
+59 silly registry.get     via: '1.1 varnish',
+59 silly registry.get     'last-modified': 'Sun, 09 Mar 2014 13:00:37 GMT',
+59 silly registry.get     'cache-control': 'max-age=1',
+59 silly registry.get     etag: '"98PT1BK99R1EYV7OMMLNRM50E"',
+59 silly registry.get     'x-served-by': 'cache-am71-AMS',
+59 silly registry.get     'x-cache': 'MISS',
+59 silly registry.get     'x-cache-hits': '0',
+59 silly registry.get     'x-timer': 'S1394370037.024994373,VS0,VE85',
+59 silly registry.get     vary: 'Accept',
+59 silly registry.get     'content-length': '0',
+59 silly registry.get     'keep-alive': 'timeout=10, max=50',
+59 silly registry.get     connection: 'Keep-Alive' } ]
+60 verbose etag install from cache
+61 silly addNameRange number 2 { name: 'install', range: '*', hasData: true }
+62 silly addNameRange versions [ 'install',
+62 silly addNameRange   [ '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6', '0.1.7' ] ]
+63 verbose addNamed [ 'install', '0.1.7' ]
+64 verbose addNamed [ '0.1.7', '0.1.7' ]
+65 silly lockFile b58c0e47-install-0-1-7 install@0.1.7
+66 verbose lock install@0.1.7 /Users/Hacker/.npm/b58c0e47-install-0-1-7.lock
+67 silly lockFile b58c0e47-install-0-1-7 install@0.1.7
+68 silly lockFile b58c0e47-install-0-1-7 install@0.1.7
+69 silly lockFile cadb329f-install install@
+70 silly lockFile cadb329f-install install@
+71 http 304 https://registry.npmjs.org/npm
+72 silly registry.get cb [ 304,
+72 silly registry.get   { date: 'Sun, 09 Mar 2014 13:00:37 GMT',
+72 silly registry.get     server: 'Apache',
+72 silly registry.get     via: '1.1 varnish',
+72 silly registry.get     'last-modified': 'Sun, 09 Mar 2014 13:00:37 GMT',
+72 silly registry.get     'cache-control': 'max-age=1',
+72 silly registry.get     etag: '"W7NKVM8WL2MJTDXA5A00B12Q"',
+72 silly registry.get     'x-served-by': 'cache-am70-AMS',
+72 silly registry.get     'x-cache': 'HIT',
+72 silly registry.get     'x-cache-hits': '1',
+72 silly registry.get     'x-timer': 'S1394370037.024623632,VS0,VE106',
+72 silly registry.get     vary: 'Accept',
+72 silly registry.get     'content-length': '0',
+72 silly registry.get     'keep-alive': 'timeout=10, max=50',
+72 silly registry.get     connection: 'Keep-Alive' } ]
+73 verbose etag npm from cache
+74 silly addNameRange number 2 { name: 'npm', range: '*', hasData: true }
+75 silly addNameRange versions [ 'npm',
+75 silly addNameRange   [ '1.1.25',
+75 silly addNameRange     '1.2.32',
+75 silly addNameRange     '1.3.2',
+75 silly addNameRange     '1.3.4',
+75 silly addNameRange     '1.2.20',
+75 silly addNameRange     '1.2.21',
+75 silly addNameRange     '1.2.22',
+75 silly addNameRange     '1.2.23',
+75 silly addNameRange     '1.2.24',
+75 silly addNameRange     '1.2.25',
+75 silly addNameRange     '1.2.27',
+75 silly addNameRange     '1.2.28',
+75 silly addNameRange     '1.2.30',
+75 silly addNameRange     '1.2.31',
+75 silly addNameRange     '1.3.0',
+75 silly addNameRange     '1.3.1',
+75 silly addNameRange     '1.2.19',
+75 silly addNameRange     '1.1.70',
+75 silly addNameRange     '1.1.71',
+75 silly addNameRange     '1.3.5',
+75 silly addNameRange     '1.3.6',
+75 silly addNameRange     '1.3.7',
+75 silly addNameRange     '1.3.8',
+75 silly addNameRange     '1.3.9',
+75 silly addNameRange     '1.3.10',
+75 silly addNameRange     '1.3.11',
+75 silly addNameRange     '1.3.12',
+75 silly addNameRange     '1.3.13',
+75 silly addNameRange     '1.3.14',
+75 silly addNameRange     '1.3.15',
+75 silly addNameRange     '1.3.16',
+75 silly addNameRange     '1.3.17',
+75 silly addNameRange     '1.3.18',
+75 silly addNameRange     '1.3.20',
+75 silly addNameRange     '1.3.21',
+75 silly addNameRange     '1.3.22',
+75 silly addNameRange     '1.3.23',
+75 silly addNameRange     '1.3.24',
+75 silly addNameRange     '1.3.25',
+75 silly addNameRange     '1.3.26',
+75 silly addNameRange     '1.4.0',
+75 silly addNameRange     '1.4.1',
+75 silly addNameRange     '1.4.2',
+75 silly addNameRange     '1.4.3',
+75 silly addNameRange     '1.4.4' ] ]
+76 verbose addNamed [ 'npm', '1.4.4' ]
+77 verbose addNamed [ '1.4.4', '1.4.4' ]
+78 silly lockFile 1ddd4d61-npm-1-4-4 npm@1.4.4
+79 verbose lock npm@1.4.4 /Users/Hacker/.npm/1ddd4d61-npm-1-4-4.lock
+80 silly lockFile 63cea8fa-stry-npmjs-org-npm-npm-1-4-4-tgz https://registry.npmjs.org/npm/-/npm-1.4.4.tgz
+81 verbose lock https://registry.npmjs.org/npm/-/npm-1.4.4.tgz /Users/Hacker/.npm/63cea8fa-stry-npmjs-org-npm-npm-1-4-4-tgz.lock
+82 verbose addRemoteTarball [ 'https://registry.npmjs.org/npm/-/npm-1.4.4.tgz',
+82 verbose addRemoteTarball   '076616f7af95bcd08a4c5ad5cce18c5f370e0935' ]
+83 info retry fetch attempt 1 at 14:00:39
+84 verbose fetch to= /var/folders/by/rz_9_ydx1934bd66jmtcyg2m0000gn/T/npm-79376-8tYEzWVZ/1394370039115-0.3304473562166095/tmp.tgz
+85 http GET https://registry.npmjs.org/npm/-/npm-1.4.4.tgz
+86 http 404 https://registry.npmjs.org/http-serverasdfasdf
+87 silly registry.get cb [ 404,
+87 silly registry.get   { date: 'Sun, 09 Mar 2014 13:00:37 GMT',
+87 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+87 silly registry.get     'content-type': 'application/json',
+87 silly registry.get     via: '1.1 varnish',
+87 silly registry.get     'cache-control': 'max-age=0',
+87 silly registry.get     'content-length': '52',
+87 silly registry.get     'accept-ranges': 'bytes',
+87 silly registry.get     age: '0',
+87 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-am69-AMS',
+87 silly registry.get     'x-cache': 'MISS, MISS',
+87 silly registry.get     'x-cache-hits': '0, 0',
+87 silly registry.get     'x-timer': 'S1394370037.030646324,VS0,VS-786,VE-700,VE181',
+87 silly registry.get     'keep-alive': 'timeout=10, max=50',
+87 silly registry.get     connection: 'Keep-Alive' } ]
+88 silly lockFile d5cac9f5-http-serverasdfasdf http-serverasdfasdf@
+89 silly lockFile d5cac9f5-http-serverasdfasdf http-serverasdfasdf@
+90 error 404 'http-serverasdfasdf' is not in the npm registry.
+90 error 404 You should bug the author to publish it
+90 error 404
+90 error 404 Note that you can also install from a
+90 error 404 tarball, folder, or http url, or git url.
+91 error System Darwin 13.0.2
+92 error command "node" "/usr/local/bin/npm" "install" "npm" "install" "http-serverasdfasdf"
+93 error cwd /Users/Hacker/Dev/ios_beatbox
+94 error node -v v0.10.24
+95 error npm -v 1.3.23
+96 error code E404
+97 verbose exit [ 1, true ]

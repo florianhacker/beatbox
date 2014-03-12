@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>BEATBOX</title>
+    </head>
+    <body>
+        
+        <div class="drum_pattern">
+            <span class="beat" data-index="0"></span>
+            <span class="beat" data-index="1"></span>
+            <span class="beat" data-index="2"></span>
+            <span class="beat" data-index="3"></span>
+            <span class="beat" data-index="4"></span>
+            <span class="beat" data-index="5"></span>
+            <span class="beat" data-index="6"></span>
+            <span class="beat" data-index="7"></span>
+            <span class="beat" data-index="8"></span>
+            <span class="beat" data-index="9"></span>
+            <span class="beat" data-index="10"></span>
+            <span class="beat" data-index="11"></span>
+            <span class="beat" data-index="12"></span>
+            <span class="beat" data-index="13"></span>
+            <span class="beat" data-index="14"></span>
+            <span class="beat" data-index="15"></span>
+        </div>
+
+
+        <style>
+
+            .overlay,
+            .drum_pattern{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                overflow: hidden
+            }
+
+            .overlay{
+                background: #ff0000;
+                opacity: 0.1;
+            }
+
+            .drum_pattern{
+                overflow: hidden;
+                font-size: 0;
+            }
+
+            .drum_pattern .beat{
+                display: inline-block;
+                background: black;
+                width: 160px;
+                height: 142px;
+                -webkit-transition: all 0.1s;
+            }
+
+            .drum_pattern .beat.touched{
+                -webkit-transform: scale(0.8);
+            }
+
+            .drum_pattern .beat:nth-child(1){ background: #000; }
+            .drum_pattern .beat:nth-child(2){ background: #111; }
+            .drum_pattern .beat:nth-child(3){ background: #222; }
+            .drum_pattern .beat:nth-child(4){ background: #333; }
+            .drum_pattern .beat:nth-child(5){ background: #444; }
+            .drum_pattern .beat:nth-child(6){ background: #555; }
+            .drum_pattern .beat:nth-child(7){ background: #666; }
+            .drum_pattern .beat:nth-child(8){ background: #777; }
+
+            .drum_pattern .beat.sample{
+                background: blue;
+            }
+
+            .drum_pattern .beat.onTrigger{
+                background: red;
+            }
+
+        </style>
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/lib/zepto.js"></script>
+        <script type="text/javascript" src="js/lib/hammer.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/BeatBox.js"></script>
+
+        <!-- FH library -->
+        <script type="text/javascript" src="js/phonegap/FileWriter.js"></script>f
+        <script type="text/javascript" src="js/phonegap/FileReader.js"></script>f
+        <script type="text/javascript" src="js/phonegap/AudioRecorder.js"></script>f
+        <script type="text/javascript" src="js/sound/Rhythm.js"></script>
+        <script type="text/javascript" src="js/sound/BufferLoader.js"></script>
+
+        <script type="text/javascript">
+
+            
+            if( document.URL.indexOf("file") == -1)
+            {
+                console.log("init mobile")
+                app.initialize();
+            }
+            else
+            {   
+                console.log("init desktop")
+                var beatBox = new FH.BeatBox();
+            }
+
+        </script>
+    </body>
+</html>
