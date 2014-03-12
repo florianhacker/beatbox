@@ -4,7 +4,7 @@ CONTEXT = new webkitAudioContext();
 CONTEXT.createGain();
 
 FH.BeatBox = function(){
-		
+
 	this.init();
 };
 
@@ -14,8 +14,6 @@ FH.BeatBox.prototype.init = function(){
 	fs.deleteAllFiles( onAllFilesDeleted.bind(this) );
 
 		function onAllFilesDeleted(){
-
-			console.log("onAllFilesDeleted ....")
 
 			this.samples = []; 
 			this.recordingSessions = {};
@@ -32,9 +30,27 @@ FH.BeatBox.prototype.init = function(){
 			this.rtm = new FH.Rhythm( this.onBeatTriggered.bind(this), this.beats.length );
 
 			//DOUBLE TAP ON SCREEN
-			//$('.drum_pattern').tap( this.onPlayPause.bind(this) );
+			var playPauseButton = document.getElementsByClassName("play-pause")[0];
+			playPauseButton.addEventListener( "touchstart", this.onPlayPause.bind(this) );
+
+			var speedUp = document.querySelector(".speed.up");
+			speedUp.addEventListener( "touchstart", this.speedUpButtonClicked.bind(this) );
+
+			var speedDown = document.querySelector(".speed.down");
+			speedDown.addEventListener( "touchstart", this.speedDownButtonClicked.bind(this) );
 		}
 };
+
+FH.BeatBox.prototype.speedUpButtonClicked = function(e){
+
+	this.rtm.bpm += 5;
+}
+
+FH.BeatBox.prototype.speedDownButtonClicked = function(e){
+
+	this.rtm.bpm -= 5;
+}
+
 
 FH.BeatBox.prototype.onBeatTouchStart = function(e){
 

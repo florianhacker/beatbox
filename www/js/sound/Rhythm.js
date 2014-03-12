@@ -9,6 +9,7 @@ FH.Rhythm.prototype.init = function(cb, beatLength){
 	this.beatLength = beatLength;
 	this.interval = null;
 	this.isRunning = false;
+	this.bpm = 80;
 };
 
 FH.Rhythm.prototype.start = function(){
@@ -44,7 +45,7 @@ FH.Rhythm.prototype.schedule = function()
 
 FH.Rhythm.prototype.advancedNote = function()
 {
-	var secondsPerBeat = 60.0 / 80;
+	var secondsPerBeat = 60.0 / this.bpm;
 	this.exactBeatTime += 0.25 * secondsPerBeat;
 
 	var oldDrumIndex = this.drumIndex;

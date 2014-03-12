@@ -37,48 +37,111 @@
             <span class="beat" data-index="5"></span>
             <span class="beat" data-index="6"></span>
             <span class="beat" data-index="7"></span>
-            <span class="beat" data-index="8"></span>
-            <span class="beat" data-index="9"></span>
-            <span class="beat" data-index="10"></span>
-            <span class="beat" data-index="11"></span>
-            <span class="beat" data-index="12"></span>
-            <span class="beat" data-index="13"></span>
-            <span class="beat" data-index="14"></span>
-            <span class="beat" data-index="15"></span>
+        </div>
+
+        <div class="controls">
+            <span class="speed up"></span>
+            <span class="play-pause"></span>
+            <span class="speed down"></span>
         </div>
 
 
         <style>
+
+            body{
+                overflow: hidden;
+                background: white;
+            }
+
+            .speed.up{
+                background: green !important;
+            }
 
             .overlay,
             .drum_pattern{
                 position: absolute;
                 top: 0;
                 left: 0;
-                bottom: 0;
+                bottom: 10%;
                 right: 0;
-                overflow: hidden
+                overflow: hidden;
+            }
+
+            .drum_pattern{
+                
+            }
+
+            .controls{
+
+                position: absolute;
+                top: 90%;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            .controls > *{
+
+                display: block;
+                height: 100%;
+                float: left;
+            }
+
+            .controls .speed{
+
+                width: 40%;
+                background: #777;
+            }
+
+            .controls .play-pause{
+
+                width: 20%;
+                background: #999;
             }
 
             .overlay{
+
                 background: #ff0000;
                 opacity: 0.1;
             }
 
             .drum_pattern{
+                
                 overflow: hidden;
                 font-size: 0;
             }
 
             .drum_pattern .beat{
+                
+                position: relative;
                 display: inline-block;
                 background: black;
-                width: 160px;
-                height: 142px;
+                width: 50%;
+                height: 25%;
                 -webkit-transition: all 0.1s;
+                /*border-radius: 20px;*/
+            }
+
+            .drum_pattern .beat:after{
+
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border-radius: 10px;
+                -webkit-transform: translate3d(-50%, -50%, 0);
+            }
+
+            .drum_pattern .beat.onTrigger:after{
+
+                background: red; 
             }
 
             .drum_pattern .beat.touched{
+
                 -webkit-transform: scale(0.8);
             }
 
@@ -92,18 +155,14 @@
             .drum_pattern .beat:nth-child(8){ background: #777; }
 
             .drum_pattern .beat.sample{
-                background: blue;
-            }
 
-            .drum_pattern .beat.onTrigger{
-                background: red;
+                background: blue;
             }
 
         </style>
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/lib/zepto.js"></script>
-        <script type="text/javascript" src="js/lib/hammer.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/BeatBox.js"></script>
 
@@ -117,6 +176,8 @@
         <script type="text/javascript">
 
             app.initialize();
+            
+            //new FH.BeatBox();
         </script>
     </body>
 </html>
