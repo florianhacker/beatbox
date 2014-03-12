@@ -45,6 +45,7 @@
 		4CB2A8D8E3194EB6AE35069E /* CDVCapture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3F1084F6DFA4AE89F5F8AB9 /* CDVCapture.bundle */; };
 		D7C6A3C254B947118684D166 /* CDVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D52B57E60F438D9C740F1A /* CDVSound.m */; };
 		5E2FC45C1B5141D7BA02FF5A /* CDVFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EE09EF18AC4573A8A950E2 /* CDVFileTransfer.m */; };
+		42E8BDFC12DA40D69C14352A /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB92C531B1141F3AD7803AD /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		8ECDC64DCCF64DECA4170B5A /* CDVSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSound.h"; path = "org.apache.cordova.media/CDVSound.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		86EE09EF18AC4573A8A950E2 /* CDVFileTransfer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVFileTransfer.m"; path = "org.apache.cordova.file-transfer/CDVFileTransfer.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		9DCC862FDBA649019AF3D85A /* CDVFileTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVFileTransfer.h"; path = "org.apache.cordova.file-transfer/CDVFileTransfer.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		9BB92C531B1141F3AD7803AD /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "com.phonegap.plugin.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D94B5320904748DBA345FE22 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "com.phonegap.plugin.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +258,8 @@
 				8ECDC64DCCF64DECA4170B5A /* CDVSound.h */,
 				86EE09EF18AC4573A8A950E2 /* CDVFileTransfer.m */,
 				9DCC862FDBA649019AF3D85A /* CDVFileTransfer.h */,
+				9BB92C531B1141F3AD7803AD /* CDVStatusBar.m */,
+				D94B5320904748DBA345FE22 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "BEATBOX/Plugins";
@@ -456,6 +461,7 @@
 				098F3994347747A4B186E3C9 /* CDVCapture.m in Sources */,
 				D7C6A3C254B947118684D166 /* CDVSound.m in Sources */,
 				5E2FC45C1B5141D7BA02FF5A /* CDVFileTransfer.m in Sources */,
+				42E8BDFC12DA40D69C14352A /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

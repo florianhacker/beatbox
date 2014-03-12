@@ -9,7 +9,7 @@ FH.BeatBox = function(){
 };
 
 FH.BeatBox.prototype.init = function(){
-	
+
 	var fs = new FH.FileReader();
 	fs.deleteAllFiles( onAllFilesDeleted.bind(this) );
 

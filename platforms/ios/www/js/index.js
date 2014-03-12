@@ -40,6 +40,8 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
 
+        StatusBar.hide();
+        
         var beatBox = new FH.BeatBox();
     }
 };

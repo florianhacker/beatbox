@@ -78,6 +78,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.phonegap.plugin.statusbar/www/statusbar.js",
+        "id": "com.phonegap.plugin.statusbar.statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -220,6 +227,7 @@ module.exports.metadata =
     "org.apache.cordova.media-capture": "0.2.8",
     "org.apache.cordova.media": "0.2.9",
     "org.apache.cordova.file-transfer": "0.4.2",
+    "com.phonegap.plugin.statusbar": "1.1.0",
     "org.apache.cordova.file": "1.0.1"
 }
 // BOTTOM OF METADATA
