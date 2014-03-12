@@ -13,7 +13,7 @@ FH.AudioRecorder.prototype.record = function(fileName) {
 
     function onRecordSuccess(e){
 
-      console.log("onRecordSuccess", e);
+      console.log("Audio Record success", e);
     }
 
     function onRecordError(e){

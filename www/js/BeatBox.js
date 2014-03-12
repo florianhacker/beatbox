@@ -4,13 +4,12 @@ CONTEXT = new webkitAudioContext();
 CONTEXT.createGain();
 
 FH.BeatBox = function(){
-
-	this.init();	
+		
+	this.init();
 };
 
 FH.BeatBox.prototype.init = function(){
-	console.log("init");
-
+	
 	var fs = new FH.FileReader();
 	fs.deleteAllFiles( onAllFilesDeleted.bind(this) );
 
