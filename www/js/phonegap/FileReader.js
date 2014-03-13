@@ -25,10 +25,9 @@ FH.FileReader.prototype.onReady = function(fileSystem) {
 			for(var i = 0; i<entries.length; i++){
 				var fileEntry = entries[i];	
 				fileEntry.remove();
-				console.log("entries[i]:", fileEntry )
+				console.log("remmoved entries[i]:", fileEntry )
 			}
 
-			console.log("deleteAllFiles finished");
 			this.callback();
 		}
 

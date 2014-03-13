@@ -39,11 +39,15 @@
             <span class="beat" data-index="7"></span>
         </div>
 
-        <div class="controls">
+        <span class="speed up"></span>
+        <span class="play-pause"></span>
+        <span class="speed down"></span>
+
+<!--         <div class="controls">
             <span class="speed up"></span>
             <span class="play-pause"></span>
             <span class="speed down"></span>
-        </div>
+        </div> -->
 
 
         <style>
@@ -62,7 +66,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                bottom: 10%;
+                bottom: 0;
                 right: 0;
                 overflow: hidden;
             }
@@ -72,7 +76,7 @@
             }
 
             .controls{
-
+                display: none;
                 position: absolute;
                 top: 90%;
                 right: 0;
@@ -87,16 +91,40 @@
                 float: left;
             }
 
-            .controls .speed{
+/*            .controls .speed{
 
                 width: 40%;
                 background: #fff;
+            }*/
+
+            .play-pause,
+            .speed{
+                
+                position: absolute;
+                display: block;
+                width: 50px;
+                height: 50px;
+                left: 50%;
+                border: 5px solid #E82C0C;
+                background: #FF530D;
+                border-radius: 50px;
+                -webkit-transform: translate3d(-50%, -50%, 0);
             }
 
-            .controls .play-pause{
+            .play-pause{
 
-                width: 20%;
-                background: #999;
+                top: 50%;
+                left: 50%;
+            }
+
+            .speed.up{
+
+                top: 25%;
+            }
+
+            .speed.down{
+
+                top: 75%;
             }
 
             .overlay{
@@ -115,11 +143,13 @@
                 
                 position: relative;
                 display: inline-block;
-                background: black;
-                width: 50%;
-                height: 25%;
+                background: #E82C0C;
+                border-radius: 200px;
+                width: calc(45% - 10px);
+                height: calc( (100% / 4.5) - 10px );
                 -webkit-transition: all 0.1s;
-                /*border-radius: 20px;*/
+                border: 5px solid rgba(255,255,255,0.2);
+                margin: 2.5% 2.5%;
             }
 
             .drum_pattern .beat:after{
@@ -135,28 +165,28 @@
                 -webkit-transform: translate3d(-50%, -50%, 0);
             }
 
-            .drum_pattern .beat.onTrigger:after{
+            .drum_pattern .beat.onTrigger{
 
-                background: red; 
-            }
+                -webkit-transform: scale(0.8);
+           }
 
             .drum_pattern .beat.touched{
 
                 -webkit-transform: scale(0.8);
             }
 
-            .drum_pattern .beat:nth-child(1){ background: #000; }
+            /*.drum_pattern .beat:nth-child(1){ background: #000; }
             .drum_pattern .beat:nth-child(2){ background: #111; }
             .drum_pattern .beat:nth-child(3){ background: #222; }
             .drum_pattern .beat:nth-child(4){ background: #333; }
             .drum_pattern .beat:nth-child(5){ background: #444; }
             .drum_pattern .beat:nth-child(6){ background: #555; }
             .drum_pattern .beat:nth-child(7){ background: #666; }
-            .drum_pattern .beat:nth-child(8){ background: #777; }
+            .drum_pattern .beat:nth-child(8){ background: #777; }*/
 
             .drum_pattern .beat.sample{
 
-                background: blue;
+                background: #FF0000;
             }
 
         </style>
@@ -167,9 +197,9 @@
         <script type="text/javascript" src="js/BeatBox.js"></script>
 
         <!-- FH library -->
-        <script type="text/javascript" src="js/phonegap/FileWriter.js"></script>f
-        <script type="text/javascript" src="js/phonegap/FileReader.js"></script>f
-        <script type="text/javascript" src="js/phonegap/AudioRecorder.js"></script>f
+        <script type="text/javascript" src="js/phonegap/FileWriter.js"></script>
+        <script type="text/javascript" src="js/phonegap/FileReader.js"></script>
+        <script type="text/javascript" src="js/phonegap/AudioRecorder.js"></script>
         <script type="text/javascript" src="js/sound/Rhythm.js"></script>
         <script type="text/javascript" src="js/sound/BufferLoader.js"></script>
 

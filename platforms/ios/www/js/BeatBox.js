@@ -43,12 +43,12 @@ FH.BeatBox.prototype.init = function(){
 
 FH.BeatBox.prototype.speedUpButtonClicked = function(e){
 
-	this.rtm.bpm += 5;
+	this.rtm.bpm += 20;
 }
 
 FH.BeatBox.prototype.speedDownButtonClicked = function(e){
 
-	this.rtm.bpm -= 5;
+	this.rtm.bpm -= 20;
 }
 
 
